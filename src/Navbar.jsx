@@ -3,6 +3,12 @@ import "./style.css";
 const Navbar = () => {
     return ( 
         <div className="w-screen flex justify-between items-center px-72 py-6 text-white fixed">
+            {/* Image */}
+            <img
+                className="h-12 w-auto"
+                src="./assets/images/logo.png"
+                alt="Logo"
+            />
             <span className="text-3xl font-bold">
                 BgVideo
             </span>
@@ -32,6 +38,9 @@ const Navbar = () => {
         </div>
     );
     
+    
 }
  
 export default Navbar;
+
+
