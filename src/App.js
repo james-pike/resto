@@ -7,7 +7,7 @@ function App() {
     <div className='overflow-x-hidden'>
       <Navbar/>
       {/* background */}
-      <video src={process.env.PUBLIC_URL + "/assets/video/video1.mp4"} loop autoPlay muted className='object-cover absolute h-screen w-screen -z-10 top-0 left-0'></video>
+      <video src={process.env.PUBLIC_URL + "/assets/video/almonte1.mp4"} loop autoPlay muted className='object-cover absolute h-screen w-screen -z-10 top-0 left-0'></video>
 
       {/* content */}
       <div className='px-72 w-[80%] h-screen flex flex-col justify-center text-white space-y-5'>
