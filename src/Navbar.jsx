@@ -8,19 +8,19 @@ const Navbar = () => {
             </span>
             <ul className="flex h-full space-x-4">
                 <li className="cursor-pointer hover:text-purple-500 duration-200">
-                    Home
+                    Wellington
                 </li>
                 <li className="cursor-pointer hover:text-purple-500 duration-200">
-                    About
+                    Nepean
                 </li>
                 <li className="cursor-pointer hover:text-purple-500 duration-200">
-                    Contact
+                    Almonte
                 </li>
                 <li>
                     <div className="w-[1px] h-full bg-white"></div>
                 </li>
                 <li className="cursor-pointer hover:text-purple-500 duration-200">
-                    My portofolio
+                    Reservations
                 </li>
             </ul>
         </div>
