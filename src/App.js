@@ -7,7 +7,28 @@ function App() {
     <div className='overflow-x-hidden'>
       <Navbar/>
       {/* background */}
-      <video src={process.env.PUBLIC_URL + "/assets/video/almonte1.mp4"} loop autoPlay muted className='object-cover absolute h-screen w-screen -z-10 top-0 left-0'></video>
+      {/* Use media query to show video on desktop and image on mobile */}
+      <div className='relative h-screen w-screen -z-10 top-0 left-0'>
+        <video
+          src={process.env.PUBLIC_URL + "/assets/video/almonte1.mp4"}
+          loop
+          autoPlay
+          muted
+          className='object-cover absolute h-full w-full hidden md:block' // Hidden on mobile (md and above)
+        ></video>
+        <div
+          className='bg-center bg-cover absolute h-full w-full hidden md:block' // Hidden on mobile (md and above)
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/wellington.jpg)`,
+          }}
+        ></div>
+        <div
+          className='bg-center bg-cover absolute h-full w-full block md:hidden' // Shown on mobile (md and below)
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/wellington.jpg)`,
+          }}
+        ></div>
+      </div>
 
       {/* content */}
       <div className='px-72 w-[80%] h-screen flex flex-col justify-center text-white space-y-5'>
