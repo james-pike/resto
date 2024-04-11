@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar'; // Import your Navbar component
-import useWindowSize from './useWindowSize'; // Import the custom hook
+import useWindowSize from './usewindowsize'; // Import the custom hook
+import "./style.css";
 
 function App() {
   const windowSize = useWindowSize();
